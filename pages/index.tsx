@@ -1,4 +1,4 @@
-import type { GetServerSidePropsContext, GetStaticProps, NextPage } from 'next'
+import type { GetServerSidePropsContext, NextPage } from 'next'
 import Head from 'next/head'
 
 
@@ -18,7 +18,7 @@ const Home: NextPage = ({services}:any) => {
 
 export default Home
 
-export const getStaticProps = async (context:GetStaticProps) =>{
+export const getServerSideProps = async (context:GetServerSidePropsContext) =>{
 
   const res = await fetch('http://Localhost:3000/api/data')
   const Data = await res.json()
