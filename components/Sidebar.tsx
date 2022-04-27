@@ -14,23 +14,19 @@ const gradStyle = (color: string) => {
     let st = `text-transparent bg-clip-text font-bold bg-gradient-to-br from-violet-700 to-${color}-500`
     return st
 }
-const buttonS = 'rounded-full w-[90%] p-2 my-2 flex justify-center cursor-pointer bg-gradient-to-br from-violet-700 to-red-500 hover:scale-[1.05] transition-all ease-in-out duration-300'
+const buttonS = ' my-4 md:my-3 rounded-full w-[90%] p-2  flex justify-center cursor-pointer bg-gradient-to-br from-violet-700 to-red-500 hover:scale-[1.05] transition-all ease-in-out duration-300'
 
 
 const Sidebar = () => {
     return (
         <div className=" relative flex items-center flex-col text-center overflow-hidden font-semibold">
             <div className='absolute left-[-55px] md:left-[-120px] md:top-[-10px] -z-[0]'>
-
-                {/*<img src='/logo.svg' className=' w-20 h-20 md:w-24 md:h-24 absolute top-[10px] left-[60px] md:left-[150px] md:top-[10px] '  />
-                        <img src='/style.svg' className=' w-40 h-40 md:w-[350px] md:h-[350px] '  />
-*/}
                 <AiOutlineSetting className=' text-3xl md:text-5xl lg:text-3xl text-gray-300  absolute top-[10px] left-[60px] md:left-[140px] md:top-[30px] ' />
             </div>
 
 
             <div className="mt-[-30px] mb-6 w-44 h-44 sm:h-52 sm:w-52  md:h-60 md:w-60 lg:w-52 lg:h-52 ">
-                <img src='/pr.svg' className='rounded-[50%] w-full ' />
+                <img src='/pr.svg' className='rounded-[50%] w-full h-full mt-6 ' />
             </div>
             <h3 className=" text-lg sm:text-xl md:text-2xl lg:text-xl  m-2">
                 <span className={`${gradStyle('red')} text-xl sm:text-2xl md:text-3xl lg:text-2xl`}> Abdelrhman </span>
@@ -75,7 +71,7 @@ const Sidebar = () => {
 
 
             </div>
-            <div className='flex flex-col w-full p-2 text-sm md:text-lg items-center '>
+            <div className='flex flex-col w-full p-2 text-sm md:text-lg items-center mt-5 md:mt-1 '>
                 <div className={buttonS}>
                     <FcDownload className="m-[3px]" />
                     Download Resume
