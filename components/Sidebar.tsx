@@ -25,7 +25,7 @@ const Sidebar = () => {
             </div>
 
 
-            <div className="mt-[-30px] mb-6 w-44 h-44 sm:h-52 sm:w-52  md:h-60 md:w-60 lg:w-52 lg:h-52 ">
+            <div className="mt-[-30px] mb-6 w-44 h-44 sm:h-52 sm:w-52  md:h-60 md:w-60 ">
                 <img src='/pr.svg' className='rounded-[50%] w-full h-full mt-6 ' />
             </div>
             <h3 className=" text-lg sm:text-xl md:text-2xl lg:text-xl  m-2">

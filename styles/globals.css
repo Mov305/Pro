@@ -21,15 +21,41 @@
     }
 
     .border-gradient {
-        border: 10px solid;
+        border-bottom: 1px solid;
         border-image-slice: 1;
-        border-width: 3px;
-          border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
-      }
-      .border-gradient-purple {
-      }
 
-      html{
-          scroll-behavior:smooth;
-      }
+          border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+    }
+    .border-gradient-purple {
+    }
+    html{
+        scroll-behavior:smooth;
+    }
+    .box{
+        background:rgba(255,255,255,0.05);
+        box-shadow:0 15px 35px rgb(0,0,0,0.5);
+        backdrop-filter: blur(15px);
+        border:1px solid rgba(255,255,255,0.1);
+        z-index:10;
+    }
+    svg circle {
+        transform: translate(3px,3px);
+        stroke-linecap:round;
+    }
+    svg circle:nth-child(2) {
+      stroke-dasharray:260;
+      stroke-dashoffset:0;
+        
+    }
+    .no-scrollbar::-webkit-scrollbar {
+       display: none;
+    }
+
+     /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+     -ms-overflow-style: none;  /* IE and Edge */
+     scrollbar-width: none;  /* Firefox */
+    }
+      
+      
 }

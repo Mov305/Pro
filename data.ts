@@ -2,16 +2,20 @@ import { IconType } from "react-icons";
 import { MdWeb, MdGTranslate } from 'react-icons/md';
 import { AiOutlineDatabase, AiFillCode } from 'react-icons/ai'
 import { CgIfDesign } from 'react-icons/cg'
-import { FiType } from 'react-icons/fi'
-import { IoCubeOutline } from 'react-icons/io5'
+import { FiType,FiFramer } from 'react-icons/fi'
+import { IoCubeOutline,IoLogoCss3,IoLogoNodejs,IoLogoPython } from 'react-icons/io5'
+import {SiJavascript,SiTailwindcss,SiTypescript,SiMatrix,SiReact,SiAdobeillustrator,SiAdobephotoshop,SiFigma,SiMicrosoftoffice,
+    SiNextdotjs,SiChakraui,SiBootstrap,SiMaterialui,SiFirebase,SiMongodb} from 'react-icons/si'
+import {TiHtml5} from 'react-icons/ti'
 
-interface Idata {
+
+export interface Idata {
     title: string;
     about: string;
     icon: IconType;
 }
 
-interface Ibar {
+export interface Ibar {
     name: string;
     level: string;
     type: string;
@@ -62,112 +66,117 @@ export const bar: Ibar[] = [
         name: 'JavaScript',
         level: '96',
         type: 'PL',
-        icon: FiType,
+        icon: SiJavascript,
     },
     {
-        name: 'HTML',
+        name: 'HTML5',
         level: '95',
         type: 'PL',
-        icon: FiType,
+        icon: TiHtml5,
     },
     {
         name: 'CSS',
         level: '90',
         type: 'PL',
-        icon: FiType,
+        icon: IoLogoCss3,
     },
     {
         name: 'Node js',
         level: '75',
         type: 'PL',
-        icon: FiType,
+        icon: IoLogoNodejs,
     },
     {
         name: 'TypeScript',
         level: '60',
         type: 'PL',
-        icon: FiType,
+        icon: SiTypescript,
     },
     {
         name: 'Python',
         level: '50',
         type: 'PL',
-        icon: FiType,
+        icon: IoLogoPython,
     },
     {
         name: 'Matlab',
         level: '20',
         type: 'PL',
-        icon: FiType,
+        icon: SiMatrix,
     },
     {
         name: 'React',
         level: '90',
         type: 'FW',
-        icon: FiType,
+        icon: SiReact,
     },
     {
         name: 'Next',
         level: '85',
         type: 'FW',
-        icon: FiType,
+        icon: SiNextdotjs,
     },
     {
         name: 'Tailwind css',
         level: '95',
         type: 'L',
-        icon: FiType,
+        icon: SiTailwindcss,
     },
     {
         name: 'Chakra UI',
         level: '90',
         type: 'L',
-        icon: FiType,
+        icon: SiChakraui,
     },
     {
         name: 'Bootstrap',
         level: '90',
         type: 'L',
-        icon: FiType,
+        icon: SiBootstrap,
     },
     {
         name: 'Framer motion',
         level: '80',
         type: 'L',
-        icon: FiType,
+        icon: FiFramer,
     },
     {
-        name: 'Materialize',
+        name: 'Materialui',
         level: '80',
         type: 'L',
-        icon: FiType,
+        icon: SiMaterialui,
     },
     {
         name: 'Firebase',
         level: '90',
         type: 'DB',
-        icon: FiType,
+        icon: SiFirebase,
     },
     {
         name: 'Mongo db',
         level: '70',
         type: 'DB',
-        icon: FiType,
+        icon: SiMongodb,
     },{
         name: 'Illustrator',
         level: '80',
         type: 'T',
-        icon: FiType,
+        icon: SiAdobeillustrator,
     },{
         name: 'Photoshop',
         level:'50',
         type: 'T',
-        icon: FiType,
+        icon: SiAdobephotoshop,
     },{
         name: 'Figma',
         level: '50',
         type: 'T',
-        icon: FiType,
+        icon: SiFigma,
+    },{
+        name: 'MO',
+        level: '50',
+        type: 'T',
+        icon: SiMicrosoftoffice,
     },
 
 ]
