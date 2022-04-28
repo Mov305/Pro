@@ -19,7 +19,7 @@ export interface Ibar {
     name: string;
     level: string;
     type: string;
-    icon: IconType;
+    Icon: IconType;
 }
 
 export const data: Idata[] = [
@@ -66,117 +66,117 @@ export const bar: Ibar[] = [
         name: 'JavaScript',
         level: '96',
         type: 'PL',
-        icon: SiJavascript,
+        Icon: SiJavascript,
     },
     {
         name: 'HTML5',
         level: '95',
         type: 'PL',
-        icon: TiHtml5,
+        Icon: TiHtml5,
     },
     {
         name: 'CSS',
         level: '90',
         type: 'PL',
-        icon: IoLogoCss3,
+        Icon: IoLogoCss3,
     },
     {
         name: 'Node js',
         level: '75',
         type: 'PL',
-        icon: IoLogoNodejs,
+        Icon: IoLogoNodejs,
     },
     {
         name: 'TypeScript',
         level: '60',
         type: 'PL',
-        icon: SiTypescript,
+        Icon: SiTypescript,
     },
     {
         name: 'Python',
         level: '50',
         type: 'PL',
-        icon: IoLogoPython,
+        Icon: IoLogoPython,
     },
     {
         name: 'Matlab',
         level: '20',
         type: 'PL',
-        icon: SiMatrix,
+        Icon: SiMatrix,
     },
     {
         name: 'React',
         level: '90',
         type: 'FW',
-        icon: SiReact,
+        Icon: SiReact,
     },
     {
         name: 'Next',
         level: '85',
         type: 'FW',
-        icon: SiNextdotjs,
+        Icon: SiNextdotjs,
     },
     {
         name: 'Tailwind css',
         level: '95',
         type: 'L',
-        icon: SiTailwindcss,
+        Icon: SiTailwindcss,
     },
     {
         name: 'Chakra UI',
         level: '90',
         type: 'L',
-        icon: SiChakraui,
+        Icon: SiChakraui,
     },
     {
         name: 'Bootstrap',
         level: '90',
         type: 'L',
-        icon: SiBootstrap,
+        Icon: SiBootstrap,
     },
     {
-        name: 'Framer motion',
+        name: 'Framer M',
         level: '80',
         type: 'L',
-        icon: FiFramer,
+        Icon: FiFramer,
     },
     {
         name: 'Materialui',
         level: '80',
         type: 'L',
-        icon: SiMaterialui,
+        Icon: SiMaterialui,
     },
     {
         name: 'Firebase',
         level: '90',
         type: 'DB',
-        icon: SiFirebase,
+        Icon: SiFirebase,
     },
     {
         name: 'Mongo db',
         level: '70',
         type: 'DB',
-        icon: SiMongodb,
+        Icon: SiMongodb,
     },{
         name: 'Illustrator',
         level: '80',
         type: 'T',
-        icon: SiAdobeillustrator,
+        Icon: SiAdobeillustrator,
     },{
         name: 'Photoshop',
         level:'50',
         type: 'T',
-        icon: SiAdobephotoshop,
+        Icon: SiAdobephotoshop,
     },{
         name: 'Figma',
         level: '50',
         type: 'T',
-        icon: SiFigma,
+        Icon: SiFigma,
     },{
         name: 'MO',
         level: '50',
         type: 'T',
-        icon: SiMicrosoftoffice,
+        Icon: SiMicrosoftoffice,
     },
 
 ]
