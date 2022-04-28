@@ -7,17 +7,23 @@ if (typeof window !== 'undefined') {
     dragElement(document.getElementById("Ldrag"));
     dragElement(document.getElementById("DBdrag"));
     dragElement(document.getElementById("Tdrag"));
-    console.log('done')
+
 
 }
 
 function dragElement(elmnt: any) {
 
     var pos1 = 0,pos3 = 0;
-    elmnt.onmousedown = dragMouseDown;
+    if(typeof window !== 'undefined'){
+        elmnt.onmousedown = dragMouseDown;
+    }else{
+        console.log('err')
+        console.log(elmnt.onmousedown,typeof window)
+    }
+    
     function dragMouseDown(e: any) {
         e = e || window.event;
-        e.preventDefault();
+        e?.preventDefault();
         // get the mouse cursor position at startup:
         pos3 = e.clientX;
         document.onmouseup = closeDragElement;
